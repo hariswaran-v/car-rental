@@ -1,10 +1,9 @@
 import React from "react";
 import Title from "./Title";
-import { assets, dummyCarData } from "../assets/assets";
+import { assets } from "../assets/assets";
 import CarCard from "./CarCard";
 import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
-import { motion } from "framer-motion";
 
 const FeaturedSection = () => {
   const navigate = useNavigate();
@@ -76,7 +75,7 @@ const FeaturedSection = () => {
           viewport={{ once: true, margin: "-50px" }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 w-full max-w-7xl"
         >
-          {cars.slice(0, 6).map((car, index) => (
+          {cars.slice(0, 6).map((car) => (
             <motion.div
               key={car._id}
               variants={itemVariants}
