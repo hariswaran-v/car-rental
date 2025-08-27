@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { assets, menuLinks } from "../assets/assets";
-import { NavLink,  useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
 import toast from "react-hot-toast";
-
+import { motion as _motion } from "framer-motion";
 
 const Navbar = () => {
   const { setShowLogin, user, logout, isOwner, axios, setIsOwner } =

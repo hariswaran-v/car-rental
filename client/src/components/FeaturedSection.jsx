@@ -4,6 +4,7 @@ import { assets } from "../assets/assets";
 import CarCard from "./CarCard";
 import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../context/AppContext";
+import { motion as _motion } from "framer-motion";
 
 const FeaturedSection = () => {
   const navigate = useNavigate();
